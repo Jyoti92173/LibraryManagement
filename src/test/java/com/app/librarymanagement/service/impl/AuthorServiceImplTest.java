@@ -9,7 +9,7 @@ class AuthorServiceImplTest {
 
     @Test
     void addAuthor() {
-        AuthorDTO authorDTO = new AuthorDTO();
+
 
     }
 

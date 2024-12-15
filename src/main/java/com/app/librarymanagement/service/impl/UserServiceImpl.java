@@ -31,10 +31,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserDTO> getAllUser() {
         List<User> Users = userRepo.findAll();
+        logger.info("Fetched Users: {}",Users);
         System.out.println(Users);
         List<UserDTO> userDTOList= new ArrayList<>();
         Users.forEach(user -> userDTOList.add(new UserDTO(user.getId(), user.getName(),user.getEmail())));
-        System.out.println(userDTOList);
+        logger.info("Converted UserDTO List: {}", userDTOList);
         return userDTOList;
     }
 
