@@ -63,7 +63,7 @@ public class AuthorServiceImpl implements AuthorService {
             authorRepo.deleteById(id);
             logger.info("Author with ID={} deleted successfully.", id);
         } else {
-            throw new AuthorNotFoundException("AuthorId" + id + "Does not exist.");
+            f
         }
     }
 
