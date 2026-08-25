@@ -23,5 +23,4 @@ public class Author{
     @OneToMany(mappedBy = "author")
     private Set<Book> books;
     
-
 }
