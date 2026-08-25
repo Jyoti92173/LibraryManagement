@@ -3,7 +3,7 @@ package com.app.librarymanagement.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Objects;
+
 
 @Entity
 @Data
@@ -28,5 +28,5 @@ public class Book{
     @ManyToOne
     @JoinColumn(name = "publisher_id")
     private Publisher publisher;
-    
+
 }
