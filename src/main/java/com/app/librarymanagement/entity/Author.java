@@ -10,7 +10,7 @@ import java.util.Set;
 @Data
 @Table(name = "author")
 public class Author{
-    
+
     @Id                            //primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "author_id", length = 11)
@@ -23,9 +23,6 @@ public class Author{
     @OneToMany(mappedBy = "author")
     private Set<Book> books;
 
-    public Author(String name, String phoneNo) {
-        this.name = name;
-        this.phoneNo = phoneNo;
-    }
+   
 
 }
