@@ -3,7 +3,6 @@ package com.app.librarymanagement.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-
 @Entity
 @Data
 @Table(name = "book")
