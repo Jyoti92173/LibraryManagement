@@ -10,7 +10,7 @@ import java.util.Set;
 @Data
 @Table(name = "author")
 public class Author{
-    @Id                             //primary key
+    @Id                            //primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "author_id", length = 11)
     private int authorId;
