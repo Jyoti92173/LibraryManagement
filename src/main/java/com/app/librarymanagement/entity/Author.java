@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "author")
-public class Author {
+public class Author{
     @Id                                //primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "author_id", length = 11)
