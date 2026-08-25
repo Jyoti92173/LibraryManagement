@@ -1,11 +1,13 @@
 package com.app.librarymanagement.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 
 import java.util.Set;
 
 @Entity
+@Data
 @Table(name = "author")
 public class Author{
     @Id                                //primary key
@@ -26,41 +28,4 @@ public class Author{
     }
 
 
-    public Author() {
-    }
-
-    public int getAuthorId() {
-        return authorId;
-    }
-
-    public void setAuthorId(int authorId) {
-        this.authorId = authorId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPhoneNo() {
-        return phoneNo;
-    }
-
-    public void setPhoneNo(String phoneNo) {
-        this.phoneNo = phoneNo;
-    }
-
-
-
-    @Override
-    public String toString() {
-        return "Author{" +
-                "authorId=" + authorId +
-                ", name='" + name + '\'' +
-                ", phoneNo='" + phoneNo + '\'' +
-                '}';
-    }
 }
